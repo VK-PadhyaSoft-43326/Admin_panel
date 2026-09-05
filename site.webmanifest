@@ -1,0 +1,10 @@
+{
+  "name": "Fernwood Admin",
+  "short_name": "Fernwood",
+  "description": "Store admin for Fernwood Goods.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#F4F6F5",
+  "theme_color": "#10201C",
+  "icons": [{ "src": "assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

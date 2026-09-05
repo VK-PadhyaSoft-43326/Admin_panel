@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Sign in to the Fernwood Goods admin panel.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#10201C">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="site.webmanifest">
+<title>Sign in &middot; Fernwood Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="assets/vendor/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons.min.css" rel="stylesheet">
+<link href="assets/css/style.min.css?v=2.0.0" rel="stylesheet">
+</head>
+<body class="auth-body" data-init="signin">
+
+<noscript><div class="noscript-note">This admin panel needs JavaScript to load your data. Turn it on and reload the page.</div></noscript>
+
+<main class="auth">
+  <div class="auth-panel">
+    <div class="auth-brand">
+      <span class="mark">FW</span>
+      <span class="word">Fernwood</span>
+    </div>
+    <p class="auth-quote">Nine orders came in overnight. Four of them are ready to pack.</p>
+    <p class="auth-cite">Fernwood Goods &middot; Ahmedabad</p>
+  </div>
+
+  <div class="auth-form">
+    <div class="auth-card">
+      <h1>Sign in</h1>
+      <p class="lede">Use the account your store owner set up for you.</p>
+      <form id="signInForm" novalidate>
+        <div class="mb-3">
+          <label class="form-label" for="inEmail">Work email</label>
+          <input type="email" class="form-control" id="inEmail" value="rhea@fernwoodgoods.in" required autocomplete="username">
+          <div class="invalid-feedback">Enter the address your account uses.</div>
+        </div>
+        <div class="mb-2">
+          <label class="form-label" for="inPass">Password</label>
+          <div class="pw-field">
+            <input type="password" class="form-control" id="inPass" value="demo-password" required autocomplete="current-password">
+            <button class="pw-peek" type="button" id="peek" aria-label="Show password"><i class="bi bi-eye"></i></button>
+          </div>
+          <div class="invalid-feedback">Enter your password.</div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="inKeep" checked>
+            <label class="form-check-label" for="inKeep">Keep me signed in</label>
+          </div>
+          <a href="forgot-password.html">Forgot password</a>
+        </div>
+        <button class="btn btn-primary w-100" type="submit">Sign in</button>
+      </form>
+    </div>
+    <p class="auth-foot">Trouble getting in? Ask your store owner to check <a href="users.html">Administration</a>.</p>
+  </div>
+</main>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3" id="toastArea"></div>
+
+<script src="assets/vendor/jquery.min.js" defer></script>
+<script src="assets/vendor/bootstrap.bundle.min.js" defer></script>
+<script src="assets/js/app.min.js?v=2.0.0" defer></script>
+</body>
+</html>

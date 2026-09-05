@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Error logs in the Fernwood Goods admin panel.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#10201C">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="site.webmanifest">
+<title>Error logs &middot; Fernwood Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="assets/vendor/fonts/bootstrap-icons.woff2" as="font" type="font/woff2" crossorigin>
+<link href="assets/vendor/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons.min.css" rel="stylesheet">
+<link href="assets/css/style.min.css?v=2.0.0" rel="stylesheet">
+</head>
+<body data-init="list:error-logs">
+
+<a class="visually-hidden-focusable skip" href="#main">Skip to content</a>
+<noscript><div class="noscript-note">This admin panel needs JavaScript to load your data. Turn it on and reload the page.</div></noscript>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-brand">
+    <span class="mark">FW</span>
+    <span class="word">Fernwood</span>
+  </div>
+  <nav class="sidebar-nav">
+    <ul class="nav flex-column">
+        <li><a class="nav-link" href="index.html"><i class="bi bi-grid-1x2"></i><span>Dashboard</span></a></li>
+        <li class="nav-group">
+          <a class="nav-link nav-toggle collapsed" data-bs-toggle="collapse" href="#g-Catalog" role="button" aria-expanded="false" aria-controls="g-Catalog">
+            <i class="bi bi-collection"></i><span>Catalog</span><i class="bi bi-chevron-down caret"></i></a>
+          <ul class="nav flex-column sub collapse" id="g-Catalog">
+            <li><a class="nav-link" href="categories.html"><span>Categories</span></a></li>
+            <li><a class="nav-link" href="products.html"><span>Products</span></a></li>
+            <li><a class="nav-link" href="attributes.html"><span>Attributes</span></a></li>
+            <li><a class="nav-link" href="brands.html"><span>Brands</span></a></li>
+            <li><a class="nav-link" href="collections.html"><span>Collections</span></a></li>
+            <li><a class="nav-link" href="uoms.html"><span>Units of measure</span></a></li>
+          </ul>
+        </li>
+        <li class="nav-group">
+          <a class="nav-link nav-toggle collapsed" data-bs-toggle="collapse" href="#g-Inventory" role="button" aria-expanded="false" aria-controls="g-Inventory">
+            <i class="bi bi-boxes"></i><span>Inventory</span><i class="bi bi-chevron-down caret"></i></a>
+          <ul class="nav flex-column sub collapse" id="g-Inventory">
+            <li><a class="nav-link" href="stock.html"><span>Stock</span></a></li>
+            <li><a class="nav-link" href="stock-history.html"><span>Stock history</span></a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link" href="customers.html"><i class="bi bi-people"></i><span>Customers</span></a></li>
+        <li class="nav-group">
+          <a class="nav-link nav-toggle collapsed" data-bs-toggle="collapse" href="#g-Promotions" role="button" aria-expanded="false" aria-controls="g-Promotions">
+            <i class="bi bi-tags"></i><span>Promotions</span><i class="bi bi-chevron-down caret"></i></a>
+          <ul class="nav flex-column sub collapse" id="g-Promotions">
+            <li><a class="nav-link" href="offers.html"><span>Offers</span></a></li>
+            <li><a class="nav-link" href="coupons.html"><span>Coupons</span></a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link" href="orders.html"><i class="bi bi-bag-check"></i><span>Orders</span></a></li>
+        <li><a class="nav-link" href="invoices.html"><i class="bi bi-receipt"></i><span>Invoices</span></a></li>
+        <li><a class="nav-link" href="transactions.html"><i class="bi bi-credit-card"></i><span>Transactions</span></a></li>
+        <li><a class="nav-link" href="shipments.html"><i class="bi bi-truck"></i><span>Shipments</span></a></li>
+        <li class="nav-group">
+          <a class="nav-link nav-toggle collapsed" data-bs-toggle="collapse" href="#g-Returns" role="button" aria-expanded="false" aria-controls="g-Returns">
+            <i class="bi bi-arrow-counterclockwise"></i><span>Returns</span><i class="bi bi-chevron-down caret"></i></a>
+          <ul class="nav flex-column sub collapse" id="g-Returns">
+            <li><a class="nav-link" href="returns.html"><span>Returns</span></a></li>
+            <li><a class="nav-link" href="refunds.html"><span>Refunds</span></a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link" href="reviews.html"><i class="bi bi-star"></i><span>Reviews</span></a></li>
+        <li><a class="nav-link" href="enquiries.html"><i class="bi bi-chat-left-text"></i><span>Enquiries</span></a></li>
+        <li class="nav-group">
+          <a class="nav-link nav-toggle collapsed" data-bs-toggle="collapse" href="#g-Administration" role="button" aria-expanded="false" aria-controls="g-Administration">
+            <i class="bi bi-shield-lock"></i><span>Administration</span><i class="bi bi-chevron-down caret"></i></a>
+          <ul class="nav flex-column sub collapse" id="g-Administration">
+            <li><a class="nav-link" href="users.html"><span>Users</span></a></li>
+            <li><a class="nav-link" href="roles.html"><span>Roles</span></a></li>
+            <li><a class="nav-link" href="permissions.html"><span>Permissions</span></a></li>
+            <li><a class="nav-link" href="login-history.html"><span>Login history</span></a></li>
+          </ul>
+        </li>
+        <li class="nav-group group-current">
+          <a class="nav-link nav-toggle" data-bs-toggle="collapse" href="#g-Logs" role="button" aria-expanded="true" aria-controls="g-Logs">
+            <i class="bi bi-clock-history"></i><span>Logs</span><i class="bi bi-chevron-down caret"></i></a>
+          <ul class="nav flex-column sub collapse show" id="g-Logs">
+            <li><a class="nav-link" href="info-logs.html"><span>Info logs</span></a></li>
+            <li><a class="nav-link active" href="error-logs.html"><span>Error logs</span></a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link" href="settings.html"><i class="bi bi-sliders"></i><span>Settings</span></a></li>
+    </ul>
+  </nav>
+  <div class="sidebar-foot">
+    <div class="plan">
+      <p class="plan-title">Storage</p>
+      <div class="progress" role="progressbar" aria-label="Storage used" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar" style="width:62%"></div>
+      </div>
+      <p class="plan-note">6.2 GB of 10 GB used</p>
+    </div>
+  </div>
+</aside>
+<div class="sidebar-scrim" id="sidebarScrim" hidden></div>
+
+<div class="shell">
+  <header class="topbar">
+    <button class="icon-btn" id="sidebarToggle" type="button" aria-label="Toggle navigation"><i class="bi bi-list"></i></button>
+    <form class="search" role="search" onsubmit="return false;">
+      <i class="bi bi-search"></i>
+      <input type="search" class="form-control" id="globalSearch" placeholder="Search this page" aria-label="Search">
+    </form>
+    <div class="topbar-actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch colour theme"><i class="bi bi-moon-stars"></i></button>
+      <div class="dropdown">
+        <button class="icon-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Notifications">
+          <i class="bi bi-bell"></i><span class="dot"></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end note-menu">
+          <li class="note-head">Needs attention</li>
+          <li><a class="dropdown-item" href="orders.html"><strong>4 orders</strong> paid but not packed</a></li>
+          <li><a class="dropdown-item" href="stock.html"><strong>Cedar chopping board</strong> is down to 3 units</a></li>
+          <li><a class="dropdown-item" href="error-logs.html"><strong>Payment webhook</strong> timed out twice</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <button class="user-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="avatar">RM</span>
+          <span class="user-meta">
+            <span class="user-name">Rhea Menon</span>
+            <span class="user-role">Store owner</span>
+          </span>
+          <i class="bi bi-chevron-down"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="profile.html"><i class="bi bi-person me-2"></i>Your profile</a></li>
+          <li><a class="dropdown-item" href="users.html"><i class="bi bi-people me-2"></i>Admin users</a></li>
+          <li><a class="dropdown-item" href="login-history.html"><i class="bi bi-clock-history me-2"></i>Login history</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="login.html"><i class="bi bi-box-arrow-right me-2"></i>Sign out</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="content">
+
+    <div class="page-head">
+      <div>
+        <nav class="crumb" aria-label="Breadcrumb"><a href="index.html">Dashboard</a><i class="bi bi-chevron-right"></i><span id="pageModule"></span></nav>
+        <h1 id="pageTitle">Error logs</h1>
+        <p class="lede" id="pageLede"></p>
+      </div>
+      <div class="head-actions">
+        <button class="btn btn-outline-secondary" type="button" id="exportBtn"><i class="bi bi-download me-1"></i>Export CSV</button>
+        <a class="btn btn-primary" id="newBtn" href="#"><i class="bi bi-plus-lg me-1"></i>New</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="pill-row" id="statusPills"></div>
+      <div class="toolbar">
+        <div class="tool-search">
+          <i class="bi bi-search"></i>
+          <input type="search" class="form-control" id="listSearch" placeholder="Search this list" aria-label="Search this list">
+        </div>
+        <span id="filterSlots"></span>
+        <select class="form-select" id="listPer" aria-label="Rows per page">
+          <option value="12" selected>12 per page</option>
+          <option value="25">25 per page</option>
+          <option value="50">50 per page</option>
+        </select>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0 grid" id="listTable">
+          <thead><tr></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="grid-foot">
+        <p class="grid-count" id="listCount"></p>
+        <nav aria-label="Pages"><ul class="pagination pagination-sm mb-0" id="listPager"></ul></nav>
+      </div>
+    </div>
+
+    <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title h5" id="confirmTitle">Are you sure?</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body"><p id="confirmBody" class="mb-0"></p></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-danger" id="confirmYes">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="foot">
+    <span>Fernwood Admin — a free template. Use it, change it, ship it.</span>
+    <span>Built with Bootstrap 5, jQuery and Chart.js</span>
+  </footer>
+</div>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3" id="toastArea"></div>
+
+<script src="assets/vendor/jquery.min.js" defer></script>
+<script src="assets/vendor/bootstrap.bundle.min.js" defer></script>
+<script src="assets/vendor/chart.min.js" defer></script>
+<script src="assets/js/data.js?v=2.0.0" defer></script>
+<script src="assets/js/data-more.js?v=2.0.0" defer></script>
+<script src="assets/js/pages.js?v=2.0.0" defer></script>
+<script src="assets/js/app.min.js?v=2.0.0" defer></script>
+</body>
+</html>
